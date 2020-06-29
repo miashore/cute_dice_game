@@ -1,0 +1,116 @@
+body {
+    font-family: "Indie Flower", cursive;
+    background-color: #f9f0f1;
+    margin: 0;
+    text-align: center;
+    color: #646ab3;
+}
+
+h1 {
+    font-family: "Lobster Two", cursive;
+    font-size: 6em;
+}
+
+header {
+    margin: 10vmax 0 50px;
+}
+
+header h4 {
+    margin-top: 1%;
+}
+
+.logo {
+    filter: hue-rotate(232deg) saturate(0.5) drop-shadow(1px 5px 1px pink);
+}
+
+.container {
+    max-width: 35vw;
+    background-color: #ffdae2;
+    margin: 0 auto;
+    border-radius: 18px;
+    border-bottom: 8px solid #c4ceff;
+    padding: 5%;
+    margin-bottom: 10vmax;
+}
+
+.player {
+    display: inline-block;
+    color: #646ab3;
+    margin: 5%;
+}
+
+.player-label {
+    position: relative;
+}
+
+.player-label h2 {
+    position: relative;
+}
+
+.drop-shadow {
+    width: 20px;
+    height: 1px;
+    background-color: #646ab3;
+    border-radius: 50%;
+    margin: 10% auto 0;
+    box-shadow: 0px 1px 8px 12px;
+    opacity: 0.7;
+}
+
+.sparkles {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.wiggle {
+    animation: wiggle ease-in-out 0.35s infinite;
+}
+
+.spin {
+    animation: spin ease-in-out 0.15s 5;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-40deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(240deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 1281px) {
+    .player {
+        width: 200px;
+    }
+}
+
+@media (min-width: 641px) {
+    .player {
+        width: none;
+    }
+}
